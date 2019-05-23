@@ -6,7 +6,10 @@ import java.math.BigInteger;
 public class Factorial {
 
     public BigInteger factorialOf(Integer value){
-        return null;
+            BigInteger myBigInt = new BigInteger("1");
+            for(Integer i=2; i<=value;i++) 
+                myBigInt=myBigInt.multiply(BigInteger.valueOf(i));
+        return myBigInt;
     }
 
 }
